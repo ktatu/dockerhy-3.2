@@ -21,4 +21,4 @@ jobs:
           heroku_app_name: ${{ secrets.HEROKU_APP_NAME }}
           dockerfile_name: Dockerfile
           docker_options: "--no-cache"
-          context: ./app 
+          dockerfile_directory: ./app 

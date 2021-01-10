@@ -9,6 +9,8 @@ COPY . .
 
 EXPOSE 3000
 
+RUN npm install
+
 RUN npm run build && npm install -g serve
 
 CMD serve -s -l $PORT build
